@@ -19,7 +19,12 @@ namespace FireDepartment.Models
             : base("name=FireDepartmentEntities")
         {
         }
-    
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
